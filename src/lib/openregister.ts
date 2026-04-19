@@ -1,7 +1,9 @@
 import { ApiError, SearchFilters, SearchResult, CompanyDetail, ApiCallLog } from './types';
 import { loggedFetch } from './api-logger';
 
-const BASE_URL = 'https://api.openregister.de';
+// Use Vercel proxy in production and Vite dev-proxy in development.
+// OpenRegister does not send CORS headers, so direct browser calls are blocked.
+const BASE_URL = '/api/proxy';
 
 function buildFilterBody(filters: SearchFilters) {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any

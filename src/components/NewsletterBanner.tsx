@@ -4,7 +4,7 @@ const SESSION_KEY_SUBSCRIBED = 'nr_subscribed';
 const SESSION_KEY_DISMISSED = 'nr_dismissed';
 
 // Replace with your Buttondown newsletter slug after account setup
-const BUTTONDOWN_SLUG = 'valorem-capital';
+const BUTTONDOWN_SLUG = 'kiranbanakar';
 
 export function NewsletterBanner() {
   const [visible, setVisible] = useState(false);
