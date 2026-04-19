@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+.env.local
+.DS_Store
+*.log
+.claude/
+CLAUDE.md
+DEAL-RADAR-EXTENSIONS.md
+DEAL-RADAR-QUERIES.md
